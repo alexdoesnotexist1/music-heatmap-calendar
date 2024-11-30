@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/music_data.json")
+    fetch("music_data.json")
       .then((response) => response.json())
       .then((jsonData) => {
         setData(jsonData);
